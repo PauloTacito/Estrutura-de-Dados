@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+    int n, i;
+    int s = 0;
+
+    printf("Digite um numero natural: ");
+    scanf("%d", &n);
+
+    printf("Divisores de %d: ", n);
+
+    for (i = 1; i <= n; i++) {
+        if (n % i == 0) {
+            printf("%d ", i);
+            s = s + i;
+        }
+    }
+
+    printf("\nSoma dos divisores: %d\n", s);
+
+    return 0;
+}
